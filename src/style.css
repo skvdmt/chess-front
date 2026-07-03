@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  /* background-color: yellow; */
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: local("OpenSans-Regular"),
+  url('@/assets/fonts/OpenSans-Regular.ttf')
+  format('truetype');
+}
+
+#app {
+  font-family: "OpenSans-Regular";
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  /* background-color: purple; */
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
