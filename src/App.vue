@@ -4,7 +4,7 @@ import ChessBoard from './components/ChessBoard.vue';
 import ChessStat from './components/ChessStat.vue';
 import ChessActions from './components/ChessActions.vue';
 
-const SERVER_URL = 'https://chess.skvdmt.ru/connect'
+const SERVER_URL = 'https://chess.skvdmt.ru/ws'
 const TIMEOUT = 5000
 const NOTICE_DISPLAY = 5000
 const callbacks = []
