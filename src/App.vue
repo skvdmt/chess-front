@@ -48,7 +48,14 @@ const offerDraw = ref(0)
 
 let pass
 
-const ws = new WebSocket(SERVER_URL)
+let ws = new WebSocket(SERVER_URL)
+
+// Реконнект в случае потери соединения.
+ws.onclose = (res) => {
+  if (team.value == 'white' || team.value == 'black') {
+    ws = new WebSocket(SERVER_URL)
+  }
+}
 
 // Отправка запроса.
 function Send(req, callback) {
