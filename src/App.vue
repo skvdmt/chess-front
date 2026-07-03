@@ -4,7 +4,15 @@ import ChessBoard from './components/ChessBoard.vue';
 import ChessStat from './components/ChessStat.vue';
 import ChessActions from './components/ChessActions.vue';
 
-const SERVER_URL = 'https://chess.skvdmt.ru/connect/'
+
+let SERVER_URL;
+if (import.meta.env.DEV) {
+  SERVER_URL = 'http://localhost:8001/connect'
+}
+if (import.meta.env.PROD) {
+  SERVER_URL = 'https://chess.skvdmt.ru/connect/'
+}
+
 const TIMEOUT = 5000
 const NOTICE_DISPLAY = 5000
 const callbacks = []

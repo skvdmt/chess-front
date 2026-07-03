@@ -201,7 +201,7 @@ function DrawChessPiece(x, y) {
 .board {
   aspect-ratio : 1 / 1;
   margin: 0 auto;
-  min-width: 300px;
+  min-width: 270px;
   max-width: 500px;
   width: 100%;
   /* background-color: red; */

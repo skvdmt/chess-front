@@ -33,6 +33,7 @@ function TimeColor(num) {
 
 <style scoped>
 .clock {
+  min-width: 77px;
   /* background-color: antiquewhite; */
   .step {
     display: inline-block;
@@ -52,6 +53,9 @@ function TimeColor(num) {
   }
   .reserve {
     padding: 0 5px;
+    @media (max-width: 439px) {
+      font-size:13px;
+    }
   }
 }
 </style>

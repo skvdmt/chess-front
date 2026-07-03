@@ -60,15 +60,16 @@ function TurnContent() {
     /* display: inline-block; */
     /* white-space: nowrap; */
     text-align: center;
-    width: 100px;
+    max-width: 100px;
     font-size: 24px;
     background-color: gray;
     border-radius: 20px;
-    padding: 15px;
+    padding: 15px 5px;
     color: white;
     text-transform: uppercase;
     @media (max-width: 768px) {
-      font-size:24px;
+      font-size:18px;
+      font-weight: 600;
     }
   }
   .turn.your {
@@ -122,6 +123,9 @@ function TurnContent() {
     line-height: 1.2em;
     font-style: italic;
     font-size: 16px;
+    @media (max-width: 439px) {
+      font-size:13px;
+    }
   }
 }
 </style>

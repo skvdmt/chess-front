@@ -24,4 +24,8 @@ body {
   @media (max-width: 768px) {
     padding: 10px;
   }
+  @media (max-width: 575px) {
+    min-height: stretch;
+    padding: 0;
+  }
 }
