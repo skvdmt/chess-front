@@ -4,6 +4,7 @@ import ChessBoard from './components/ChessBoard.vue';
 import ChessStat from './components/ChessStat.vue';
 import ChessActions from './components/ChessActions.vue';
 
+const SERVER_URL = 'https://chess.skvdmt.ru/connect'
 const TIMEOUT = 5000
 const NOTICE_DISPLAY = 5000
 const callbacks = []
@@ -39,7 +40,7 @@ const offerDraw = ref(0)
 
 let pass
 
-const ws = new WebSocket('https://chess.skvdmt.ru/connect')
+const ws = new WebSocket(SERVER_URL)
 
 // Отправка запроса.
 function Send(req, callback) {
