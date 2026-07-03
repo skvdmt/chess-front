@@ -3,7 +3,7 @@ body {
   display: flex;
   place-items: center;
   min-height: 100vh;
-  /* background-color: yellow; */
+  background-color: yellow;
 }
 
 @font-face {
