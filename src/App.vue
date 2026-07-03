@@ -39,7 +39,7 @@ const offerDraw = ref(0)
 
 let pass
 
-const ws = new WebSocket('wss://chess.skvdmt.ru/connect')
+const ws = new WebSocket('https://chess.skvdmt.ru/connect')
 
 // Отправка запроса.
 function Send(req, callback) {
