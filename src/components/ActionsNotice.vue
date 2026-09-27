@@ -8,9 +8,9 @@ function NoticeClass() {
 }
 
 function Notice() {
-  if (notice == "Black Win" ||
-    notice == "White Win" ||
-    notice == "Draw") {
+  if (notice == "black win" ||
+    notice == "white win" ||
+    notice == "draw") {
     return 'game over'
   }
   return notice

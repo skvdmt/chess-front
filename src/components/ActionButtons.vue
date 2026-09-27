@@ -7,9 +7,9 @@ const emit = defineEmits(['new', 'surrender', 'draw', 'acceptDraw', 'rejectDraw'
   <div class="buttons">
     <button
       v-if="!state.valid &&
-      (state.cause == 'White Win' ||
-        state.cause == 'Black Win' ||
-        state.cause == 'Draw')"
+      (state.cause == 'white win' ||
+        state.cause == 'black win' ||
+        state.cause == 'draw')"
       @click="emit('new')"
     >New game</button>
     <button

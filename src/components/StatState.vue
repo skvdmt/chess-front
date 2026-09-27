@@ -6,9 +6,9 @@ const State = computed(() => {
   if (state.valid) {
     return 'played'
   }
-  if (state.cause == 'White Win' ||
-    state.cause == 'Black Win' ||
-    state.cause == 'Draw') {
+  if (state.cause == 'white win' ||
+    state.cause == 'black win' ||
+    state.cause == 'draw') {
       return 'over'
   }
   return 'paused'
@@ -22,9 +22,9 @@ function stateClass() {
 }
 
 function TurnColor() {
-  if (state.cause == 'White Win' ||
-    state.cause == 'Black Win' ||
-    state.cause == 'Draw') {
+  if (state.cause == 'white win' ||
+    state.cause == 'black win' ||
+    state.cause == 'draw') {
       return 'red'
   }
   if (state.valid && turn == team) {
@@ -34,9 +34,9 @@ function TurnColor() {
 }
 
 function TurnContent() {
-  if (state.cause == 'White Win' ||
-    state.cause == 'Black Win' ||
-    state.cause == 'Draw') {
+  if (state.cause == 'white win' ||
+    state.cause == 'black win' ||
+    state.cause == 'draw') {
       return state.cause
   }
   if (team == turn) {
